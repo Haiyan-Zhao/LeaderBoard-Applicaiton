@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Red Team",
+    "points": 0,
+    "history": []
+  },
+  {
+    "id": 2,
+    "name": "Blue Team",
+    "points": 0,
+    "history": []
+  },
+  {
+    "id": 3,
+    "name": "Green Team",
+    "points": 0,
+    "history": []
+  },
+  {
+    "id": 4,
+    "name": "Yellow Team",
+    "points": 0,
+    "history": []
+  }
+]
