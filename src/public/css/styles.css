@@ -104,3 +104,13 @@ input, select, textarea {
     font-weight: bold;
     color: #424242; 
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .leaderboard, .points-form, .history-section {
+        margin-bottom: 20px;
+    }
+}
