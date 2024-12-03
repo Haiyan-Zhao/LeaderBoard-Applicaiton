@@ -3,7 +3,8 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #e3f2fd; /* Light blue */
+    background-color: #e3f2fd;
+    /* Light blue */
 }
 
 .container {
@@ -12,11 +13,13 @@ body {
     gap: 20px;
 }
 
-.leaderboard, .points-form, .history-section {
+.leaderboard,
+.points-form,
+.history-section {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -25,16 +28,29 @@ body {
     align-items: center;
     padding: 10px;
     margin: 5px 0;
-    background: #f9fbe7; /* Soft yellow-green */
+    background: #f9fbe7;
+    /* Soft yellow-green */
     border-radius: 4px;
 }
 
-.group.first { background: #ffeb3b; /* Vibrant yellow */ }
-.group.second { background: #b3e5fc; /* Soft blue */ }
-.group.third { background: #ffccbc; /* Light coral */ }
+.group.first {
+    background: #ffeb3b;
+    /* Vibrant yellow */
+}
+
+.group.second {
+    background: #b3e5fc;
+    /* Soft blue */
+}
+
+.group.third {
+    background: #ffccbc;
+    /* Light coral */
+}
 
 button {
-    background: #007bff; /* Bright sky blue */
+    background: #007bff;
+    /* Bright sky blue */
     color: white;
     border: none;
     padding: 8px 16px;
@@ -57,7 +73,9 @@ button.withdraw:hover {
     background: #c82333;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     padding: 8px;
     margin-right: 10px;
     border: 1px solid #ddd;
@@ -82,7 +100,8 @@ input, select, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e8f5e9; /* Light green background */
+    background-color: #e8f5e9;
+    /* Light green background */
 }
 
 .history-details {
@@ -102,15 +121,28 @@ input, select, textarea {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #424242; 
+    color: #424242;
 }
 
 @media (max-width: 768px) {
     .container {
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "leaderboard"
+            "points-form"
+            "history-section";
     }
 
-    .leaderboard, .points-form, .history-section {
-        margin-bottom: 20px;
+    .leaderboard {
+        grid-area: leaderboard;
+    }
+
+    .points-form {
+        grid-area: points-form;
+    }
+
+    .history-section {
+        grid-area: history-section;
     }
 }

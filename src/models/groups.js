@@ -23,10 +23,10 @@ const loadGroups = async () => {
     } catch (error) {
         // If file doesn't exist or is invalid, return default groups
         const defaultGroups = [
-            { id: 1, name: 'Red Team', points: 0, history: [] },
-            { id: 2, name: 'Blue Team', points: 0, history: [] },
-            { id: 3, name: 'Green Team', points: 0, history: [] },
-            { id: 4, name: 'Yellow Team', points: 0, history: [] }
+            { id: 1, name: '5100 lab discussion', points: 0, history: [] },
+            { id: 2, name: 'AAA Java Wholesale', points: 0, history: [] },
+            { id: 3, name: "Frank's 5 (idiots", points: 0, history: [] },
+            { id: 4, name: 'Programmer’s Hair Loss Group', points: 0, history: [] }
         ];
         await saveGroups(defaultGroups);
         return defaultGroups;
