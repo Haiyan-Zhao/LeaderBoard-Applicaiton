@@ -2,8 +2,15 @@
   {
     "id": 1,
     "name": "5100 lab discussion",
-    "points": 0,
-    "history": []
+    "points": 1.5,
+    "history": [
+      {
+        "id": "2024-12-03T07:05:11.349Z",
+        "points": 1.5,
+        "timestamp": "2024-12-03T07:05:11.349Z",
+        "description": ""
+      }
+    ]
   },
   {
     "id": 2,
